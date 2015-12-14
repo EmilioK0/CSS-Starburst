@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+	.doge {
+		padding: 200px;
+		position: relative;
+
+	}
+	
+	.doge img {
+		position: relative;
+		z-index: 1;
+	}
+	
+	.starbust {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	@keyframes spin {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(360deg); }
+	}
+
+	.starbust img {
+		position: relative;
+		z-index: 0;
+		animation-name: spin;
+		animation-duration: 40000ms;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+</style>
+</head>
+<body>
+	<div class="doge">
+		<img src="doge.png">
+		<div class="starbust">
+			<img src="starbust.png">
+		</div>
+	</div>
+</body>
+</html>
